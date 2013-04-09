@@ -1,0 +1,16 @@
+@charset "utf-8";
+#header h1.logo {display:inline}
+#header .search .result a:hover {background:#fff}
+.indexBox .brand .ibrandList {margin-left:-4px}
+.indexBox .brand .ibrandList img {height:58px}
+#header .search .btnAsearch {text-decoration:none}
+#main #left {height:400px; background-position:134px 30px}
+.brandList ul  {width:760px}
+.brandList li {margin:0; margin-bottom:5px}
+.brandBasic .brandLogo {height:86px}
+.brandBasic li strong {left:-65px; top:3px}
+.relatedActivities a,.activitiesList a {background-image:url(img/ie6/activitiesBg.png); position:relative; z-index:10}
+.maySwitch a.lastMonth,.maySwitch a.nextMonth {background-image:url(img/ie6/maySwitch.pnp}
+.calendar .alogo a i {width:65px!important; height:65px!important}
+.regSubmit .service label {cursor:default}
+#main .subscribeList dt {padding-bottom:5px; margin-top:0}

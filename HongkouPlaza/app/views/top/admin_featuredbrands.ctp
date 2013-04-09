@@ -1,0 +1,1 @@
+<?php echo $this->element('top/admin_featuredbrands')?>

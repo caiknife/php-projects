@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>凯德龙之梦 - 虹口 | HONGKOU PLAZA</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery_1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<!--[if IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<![endif]-->
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#header .aLogin, #loginBox .btnLogin, #promptBox .aLogin, #loginBox .forgotPassword,#forgotPassword .aLogin").colorbox({inline:true})
+	});
+</script>
+<div style="display:none">
+	<!-- 会员登入 OPEN -->
+	<div id="loginBox">
+		<h3>会员登入</h3>
+		<p><label for="username">用户名</label> <input type="text" id="username" /> <a class="reg" href="registration.html">注册新用户</a></p>
+		<p><label for="password">密码</label> <input type="password" id="password" /> <a  class="forgotPassword" href="#forgotPassword">忘记密码？</a></p>
+		<label class="saveInfo"><input type="checkbox" />保存当前使用的用户名</label>
+		<a class="btnLogin" href="#promptBox">会员登入</a>
+		<a class="cancel" href="javascript:$.fn.colorbox.close()">取消登入</a>
+	</div>
+	<!-- 会员登入 END -->
+	
+	<!-- 找回密码 OPEN -->
+	<div id="forgotPassword">
+		<h3>找回密码</h3>
+		<p><label for="username">用户名</label> <input type="text" id="username" /></p>
+		<p><label for="email">E-mail</label> <input type="text" id="email" /></p>
+		<a class="aLogin" href="#promptBox"><span>提交</span></a>
+		<a class="cancel" href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	<!-- 找回密码 END -->
+
+	<!-- 提示信息 OPEN -->	
+	<!-- 忘记密码提交成功
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>提交成功，已将密码发送至您的邮箱</h4>
+		<a class="aLogin" href="#loginBox"><span>重新登入</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	
+	<!-- 忘记密码提交失败1
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>提交失败，此用户名不存在</h4>
+		<a class="aLogin" href="#forgotPassword"><span>重新提交</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	
+	<!-- 忘记密码提交失败2
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>提交失败，提交的不是注册时填写的邮箱</h4>
+		<a class="aLogin" href="#forgotPassword"><span>重新提交</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	
+	<!-- 用户登入成功
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>登入成功，您可以继续浏览网站</h4>
+		<a class="promptBtn" href="javascript:$.fn.colorbox.close()"><span>确定</span></a>
+		<a href="member.html">进入会员专区</a>
+	</div>
+	-->
+	
+	<!-- 用户登入失败 --
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>登入失败，您输入的用户名或密码错误</h4>
+		<a class="aLogin" href="#loginBox"><span>重新登入</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	<!-- 提交登入提示 END -->
+	
+	<!-- 注册成功提示 OPEN -->
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>已经发送激活邮件至你的邮箱</h4>
+		<a class="promptBtn" href="http://mail.163.com" target="_blank" onclick="javascript:$.fn.colorbox.close()"><span>查收邮件</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	<!-- 提交登入提示 END -->
+</div>
+<div id="wrap">
+	<!-- 头部 OPEN -->
+	<div id="header">
+		<h1 class="logo"><a href="index.html">凯德龙之梦 - 虹口 | HONGKOU PLAZA</a></h1>
+	</div>
+	<!-- 头部 END -->
+	<div id="content" class="regContent">
+		<h2>欢迎注册凯德龙之梦虹口广场 提供丰富的生活服务。让你的生活多彩每一天！</h2>
+		<div class="regSubmit">
+			<fieldset>
+				<label for="mail">电子邮箱</label>
+				<input type="text" id="mail" />
+				<span class="correct"></span>
+				<!--输入您常用的邮箱，不区分大小写--> 
+				<!--
+				<span class="correct"></span>
+				<span class="error">此项不能为空！</span>
+				<span class="error">邮件地址格式不正确！</span>
+				<span class="error">邮箱已被使用，请换一个！</span>
+				-->
+			</fieldset>
+			<fieldset>
+				<label for="nickname">昵称</label>
+				<input type="text" id="nickname" />
+				<span class="error">昵称不能为特殊字符！</span>
+				<!--为自己取个个性的名字，不能使用符号-->
+				<!--
+				<span class="correct"></span>
+				<span class="error">此项不能为空！</span>
+				<span class="error">昵称不能为特殊字符！</span>
+				<span class="error">昵称已被使用，请换一个！</span>
+				-->
+			</fieldset>
+			<fieldset>
+				<label for="password1">登入密码</label>
+				<input type="password" id="password1"/>
+				密码长度必须在6-14个字符之间
+				<!--
+				<span class="correct"></span>
+				<span class="error">此项不能为空！</span>
+				<span class="error">密码长度必须大于6个字符！</span>
+				<span class="error">密码长度必须小于14个字符！</span>
+				-->
+			</fieldset>
+			<fieldset>
+				<label for="password2">密码确认</label>
+				<input type="password" id="password2"/>
+				<!--
+				<span class="correct"></span>
+				<span class="error">此项不能为空！</span>
+				<span class="error">2次输入的密码不一致！</span>
+				-->
+			</fieldset>
+			<fieldset>
+				<label for="verification">验证码</label>
+				<input type="text" id="verification" />
+				<!--
+				<span class="correct"></span>
+				<span class="error">验证码错误！</span>
+				-->
+			</fieldset>
+			<p class="verification"><img src="css/img/verification.jpg" width="118" height="55" /> <a href="#">看不清？换张图</a></p>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$(".regSubmit .service a").colorbox({iframe:true, width:'700', height:'95%'})
+				});
+			</script>
+			<p class="service"><label><input type="checkbox" /> 我已阅读并同意凯德龙之梦虹口广场的</label> <a href="service_pop.html">《服务协议》</a></p>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$(".regSubmit .btnSumit").colorbox({inline:true})
+				});
+			</script>
+			<p><a class="btnSumit" href="#promptBox">提交注册</a></p>
+		</div>
+		<div class="regLogin">
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$(".regLogin .aLogin").colorbox({inline:true})
+				});
+			</script>
+			<h3>已经有龙之梦的账号？</h3>
+			<a class="aLogin" href="#loginBox">会员登入</a>
+		</div>
+	</div>
+	<!-- 底部 OPEN -->
+	<div id="footer">
+		<div class="fInfo">
+			<ul>
+				<li class="noBorder"><a href="#">相关链接</a></li>
+				<li><a href="#">网站地图</a></li>
+				<li><a href="#">隐私政策</a></li>
+				<li><a href="#">免责条款</a></li>
+			</ul>
+			客服电话：+86 021 25519958 / 招商服务：+86 021 25519958 / 客服信箱：webservice@capitamalls.com / 营业时间：10:00 – 22:00
+			<small>Copyright &copy; 2010-2011 <strong>CapitaMalls</strong> All rights reserved.</small>
+		</div>
+	</div>
+	<!-- 底部 END -->
+</div>
+</body>
+</html>

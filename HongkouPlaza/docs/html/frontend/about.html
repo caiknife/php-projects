@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>凯德龙之梦 - 虹口 | HONGKOU PLAZA</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery_1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.colorbox.js"></script>
+<!--[if IE 6]>
+<link href="css/ie6.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/DD_belatedPNG_0.0.8a-min.js"></script>
+<![endif]-->
+</head>
+<body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#header .aLogin, #loginBox .btnLogin, #promptBox .aLogin, #loginBox .forgotPassword, #forgotPassword .aLogin").colorbox({inline:true})
+	});
+</script>
+<div style="display:none">
+	<!-- 会员登入 OPEN -->
+	<div id="loginBox">
+		<h3>会员登入</h3>
+		<p><label for="username">用户名</label> <input type="text" id="username" /> <a class="reg" href="registration.html">注册新用户</a></p>
+		<p><label for="password">密码</label> <input type="password" id="password" /> <a  class="forgotPassword" href="#forgotPassword">忘记密码？</a></p>
+		<label class="saveInfo"><input type="checkbox" />保存当前使用的用户名</label>
+		<a class="btnLogin" href="#promptBox">会员登入</a>
+		<a class="cancel" href="javascript:$.fn.colorbox.close()">取消登入</a>
+	</div>
+	<!-- 会员登入 END -->
+	
+	<!-- 找回密码 OPEN -->
+	<div id="forgotPassword">
+		<h3>找回密码</h3>
+		<p><label for="username">用户名</label> <input type="text" id="username" /></p>
+		<p><label for="email">E-mail</label> <input type="text" id="email" /></p>
+		<a class="aLogin" href="#promptBox"><span>提交</span></a>
+		<a class="cancel" href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	<!-- 找回密码 END -->
+
+	<!-- 提示信息 OPEN -->	
+	<!-- 忘记密码提交成功
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>提交成功，已将密码发送至您的邮箱</h4>
+		<a class="aLogin" href="#loginBox"><span>重新登入</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	
+	<!-- 忘记密码提交失败1
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>提交失败，此用户名不存在</h4>
+		<a class="aLogin" href="#forgotPassword"><span>重新提交</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	
+	<!-- 忘记密码提交失败2
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>提交失败，提交的不是注册时填写的邮箱</h4>
+		<a class="aLogin" href="#forgotPassword"><span>重新提交</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	
+	<!-- 用户登入成功
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>登入成功，您可以继续浏览网站</h4>
+		<a class="promptBtn" href="javascript:$.fn.colorbox.close()"><span>确定</span></a>
+		<a href="member.html">进入会员专区</a>
+	</div>
+	-->
+	
+	<!-- 用户登入失败 -->
+	<div id="promptBox">
+		<h3>提示信息</h3>
+		<h4>登入失败，您输入的用户名或密码错误</h4>
+		<a class="aLogin" href="#loginBox"><span>重新登入</span></a>
+		<a href="javascript:$.fn.colorbox.close()">取消</a>
+	</div>
+	<!-- 提交登入提示 END -->
+</div>
+<div id="wrap">
+	<!-- 头部 OPEN -->
+	<div id="header">
+		<h1 class="logo"><a href="index.html">凯德龙之梦 - 虹口 | HONGKOU PLAZA</a></h1>
+		<ul class="topnav">
+			<li><a class="a_01" href="index.html">首页</a></li>
+			<li><a class="a_02" href="http://t.sina.com.cn/hongkouplaza" target="_blank">官方微博</a></li>
+			<li><a class="a_03" href="news_list.html">新闻中心</a></li>
+			<li><a class="a_04" href="contact_us.html">联系我们</a></li>
+			<li class="login"><a class="aLogin" href="#loginBox">会员登入</a></li>
+			<li class="reg"><a href="registration.html">注册</a></li>
+			<!-- 登入后显示信息
+			<li class="member">您好, <strong>刘杰君</strong> <a class="area" href="member.html">会员专区</a> <a class="logout" href="index.html">退出</a></li>
+			-->
+		</ul>
+		<div class="tips">
+			<div class="weather"><iframe src="http://tianqi.5ikfc.com/code/?style=8&dy=1" frameborder="0" scrolling="no" width="220" height="25"></iframe><i></i></div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#header .btnMap,#footer .link01").colorbox({iframe:true, width:'925', height:'580'})
+				});
+			</script>
+			<a class="btnMap" href="map.html">楼层向导</a>
+		</div>
+		<div class="menu">
+			<ul class="nav">
+				<li><a class="a_01" href="brand.html">品牌介绍</a></li>
+				<li><a class="a_02" href="activities.html">最新活动</a></li>
+				<li><a class="a_03" href="reach.html">如何到达</a></li>
+				<li><a class="a_04" href="office.html">办公楼宇</a></li>
+				<li class="curr"><a class="a_05" href="about.html">关于凯德龙之梦</a></li>
+			</ul>
+			<div class="search">				
+				<input type="text" /><span style="display:none" class="loading"></span><a class="btnAsearch" href="advanced_search.html">高级搜索</a>
+				<!-- 搜索结果 OPEN -->
+				<div class="result">
+					<!--[if IE 6]>
+					<script type="text/javascript">DD_belatedPNG.fix('.search .result h3,.search .result ul,.search .result i')</script>
+					<![endif]-->
+					<h3>快速搜索</h3>
+					<ul>
+						<li><a href="#"><img src="images/brandLogo1_57.jpg" /><i></i><strong>味千拉面</strong>L5-SPK10</a></li>
+						<li><a href="#"><img src="images/brandLogo2_57.jpg" /><i></i><strong>季末温情送好礼季末温情送好礼</strong>2011.02.12 - 2011.03.14</a></li>
+					</ul>
+				</div>
+				<!-- 搜索结果 END -->
+			</div>
+		</div>
+	</div>
+	<!-- 头部 END -->
+	<div id="content">
+		<div id="main">
+			<!--[if IE 6]>
+			<script type="text/javascript">DD_belatedPNG.fix('#main h2')</script>
+			<![endif]-->
+			<h2 class="tAbout">关于凯德龙之梦</h2>
+			<ul class="about">
+				<li>
+					<img class="Alogo" src="images/about/logo1.png" width="119" height="51" />
+					<div>
+						<h3>嘉德置地集团<span>嘉德置地集团是亚洲最大的跨国房地产公司之一</span></h3>
+						<p>嘉德置地集团是亚洲最大的跨国房地产公司之一，总部设在新加坡并且在新加坡上市。核心业务包括房地产、服务公寓以及房地产金融服务；集中于多个快速增长城市，地理分布横跨亚太区与欧洲国家。</p>
+						<p>嘉德置地的房地产业务包括住宅、办公楼、购物商场、服务公寓和综合房产，遍布超过20个国家110多个城市。凭借其雄厚资产、领域知识、金融技能、庞大网络以及多元本土化的策略，嘉德置地也在新加坡及亚太区域为客户开发多项房地产金融产品和服务。</p>
+						<p>嘉德置地上市的子公司和附属公司包括澳洲置地、嘉德商用、嘉茂信托、嘉康信托、雅诗阁公寓信托、嘉茂中国信托、嘉德商用马来西亚信托及桂嘉信托。</p>
+					</div>
+					<img class="Aphoto" src="images/about/photo_1.jpg" width="268" height="214" />
+				</li>
+				<li>
+					<img class="Alogo" src="images/about/logo2.png" width="112" height="73" />
+					<div>
+						<h3>凯德商用<span>致力于高品质零售商用地产的投资、开发和管理</span></h3>
+						<p>凯德商用是新加坡嘉德商用产业有限公司（嘉德商用）在华设立的企业。进入中国至今，凯德商用一直致力于高品质零售商用地产的投资、开发和管理。</p>
+						<p>凯德商用在中国拥有并管理着分布于34个大中城市的52个商业地产项目，总建筑面积超过400万平方米。标志性项目包括：北京嘉茂购物中心·西直门和成都嘉信茂广场·金牛、北京来福士中心、上海来福士广场等。</p>
+						<p>凯德商用与北京华联集团，中国第六大的连锁零售商建立了战略合作关系。凯德商用亦和万科集团，中国最大的住宅地产开发商签署了战略合作大纲，制定零售商用资产计划，合作开发大纲所包括万科项目中的商业零售部分。</p>
+					</div>
+					<img class="Aphoto" src="images/about/photo_2.jpg" width="270" height="214" />
+				</li>
+				<li>
+					<img class="Alogo" src="images/about/logo3.png" width="108" height="78" />
+					<div>
+						<h3>长峰地产<span>开发完成各式建筑，包括住宅、酒店式公寓、酒店、办公楼、购物中心等</span></h3>
+						<p>长峰房地产开发有限公司成立于1992年，注册资本1.5亿元，总部管理人员80人，企业人员约5000人。成立以来，累计开发完成300余万平方米的各式建筑，包括住宅、酒店式公寓、酒店、办公楼、购物中心等。</p>
+						<p>2000年，公司逐步转入商业地产开发领域，在上海核心区开发建设并持有经营的商业物业80万平方米。在建的商业物业总量为645万平方米，其中上海在建项目105万平方米，沈阳在建项目540万平方米。</p>
+					</div>
+					<img class="Aphoto" src="images/about/photo_3.jpg" width="268" height="214" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 底部 OPEN -->
+	<div id="footer">
+		<div class="fBanner">
+			<a class="link01" href="map.html"></a>
+			<a class="link02" target="_blank" href="http://movie.douban.com/"></a>
+			<a class="link03" href="#"></a>
+		</div>
+		<div class="fInfo">
+			<ul>
+				<li class="noBorder"><a href="#">相关链接</a></li>
+				<li><a href="#">网站地图</a></li>
+				<li><a href="#">隐私政策</a></li>
+				<li><a href="#">免责条款</a></li>
+			</ul>
+			客服电话：+86 021 25519958 / 招商服务：+86 021 25519958 / 客服信箱：webservice@capitamalls.com / 营业时间：10:00 – 22:00
+			<small>Copyright &copy; 2010-2011 <strong>CapitaMalls</strong> All rights reserved.</small>
+		</div>
+	</div>
+	<!-- 底部 END -->
+</div>
+</body>
+</html>

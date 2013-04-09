@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="utf8" collation="utf8_general_ci">hongkou_plaza</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="administrators" view="standard">
+<left>966</left>
+<top>237</top>
+<width>255</width>
+<height>211</height>
+<sql_create_table>CREATE TABLE `administrators` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `username` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `last_login_time` datetime DEFAULT NULL,
+  `last_login_ip` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="brand_event" view="standard">
+<left>400</left>
+<top>162</top>
+<width>219</width>
+<height>126</height>
+<sql_create_table>CREATE TABLE `brand_event` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `brand_id` int(11) unsigned NOT NULL,
+  `event_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `Relation` (`brand_id`,`event_id`),
+  KEY `event_index` (`event_id`),
+  KEY `brand_index` (`brand_id`),
+  CONSTRAINT `FK_event_brand` FOREIGN KEY (`event_id`) REFERENCES `events` (`id`),
+  CONSTRAINT `FK_brand_event` FOREIGN KEY (`brand_id`) REFERENCES `brands` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=207 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="brands" view="standard">
+<left>692</left>
+<top>12</top>
+<width>251</width>
+<height>593</height>
+<sql_create_table>CREATE TABLE `brands` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `title` varchar(255) DEFAULT NULL,
+  `title_en` varchar(255) DEFAULT NULL,
+  `shop_id` varchar(255) DEFAULT NULL,
+  `guide_id` varchar(255) DEFAULT NULL,
+  `floor` varchar(255) DEFAULT NULL,
+  `cat_main` int(11) DEFAULT '0',
+  `cat_sub` int(11) DEFAULT '0',
+  `jh_card` tinyint(1) DEFAULT '0',
+  `keyword` varchar(255) DEFAULT NULL,
+  `operation` varchar(255) DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `style` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `openhours` varchar(255) DEFAULT NULL,
+  `brief` text,
+  `logo` varchar(255) DEFAULT NULL,
+  `main_photo` varchar(255) DEFAULT NULL,
+  `photo1` varchar(255) DEFAULT NULL,
+  `photo2` varchar(255) DEFAULT NULL,
+  `photo3` varchar(255) DEFAULT NULL,
+  `photo4` varchar(255) DEFAULT NULL,
+  `featured` tinyint(1) DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="events" view="standard">
+<left>23</left>
+<top>396</top>
+<width>327</width>
+<height>456</height>
+<sql_create_table>CREATE TABLE `events` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `cat` int(11) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `title_sub` varchar(255) DEFAULT NULL,
+  `intro` varchar(255) DEFAULT NULL,
+  `start_date` date DEFAULT NULL,
+  `end_date` date DEFAULT NULL,
+  `caption1` varchar(255) DEFAULT NULL,
+  `link1` varchar(255) DEFAULT NULL,
+  `caption2` varchar(255) DEFAULT NULL,
+  `link2` varchar(255) DEFAULT NULL,
+  `caption3` varchar(255) DEFAULT NULL,
+  `link3` varchar(255) DEFAULT NULL,
+  `caption4` varchar(255) DEFAULT NULL,
+  `link4` varchar(255) DEFAULT NULL,
+  `caption5` varchar(255) DEFAULT NULL,
+  `link5` varchar(255) DEFAULT NULL,
+  `keyword` varchar(255) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="home_banners" view="standard">
+<left>969</left>
+<top>468</top>
+<width>231</width>
+<height>211</height>
+<sql_create_table>CREATE TABLE `home_banners` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `image` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `description` text,
+  `order` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="home_events" view="standard">
+<left>968</left>
+<top>10</top>
+<width>231</width>
+<height>211</height>
+<sql_create_table>CREATE TABLE `home_events` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `image` varchar(255) DEFAULT NULL,
+  `url` varchar(255) DEFAULT NULL,
+  `description` text,
+  `order` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="member_brand" view="standard">
+<left>386</left>
+<top>16</top>
+<width>234</width>
+<height>126</height>
+<sql_create_table>CREATE TABLE `member_brand` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `member_id` int(11) unsigned NOT NULL,
+  `brand_id` int(11) unsigned NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `Relation` (`member_id`,`brand_id`),
+  KEY `member_index` (`member_id`),
+  KEY `brand_index` (`brand_id`),
+  CONSTRAINT `FK_member_brand` FOREIGN KEY (`member_id`) REFERENCES `members` (`id`),
+  CONSTRAINT `FK_brand_member` FOREIGN KEY (`brand_id`) REFERENCES `brands` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="members" view="standard">
+<left>23</left>
+<top>12</top>
+<width>255</width>
+<height>364</height>
+<sql_create_table>CREATE TABLE `members` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `email` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `nickname` varchar(255) DEFAULT NULL,
+  `fullname` varchar(255) DEFAULT NULL,
+  `gender` tinyint(255) DEFAULT NULL,
+  `birthday` date DEFAULT NULL,
+  `mobile` varchar(255) DEFAULT NULL,
+  `phone` varchar(255) DEFAULT NULL,
+  `district` int(11) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `actived` tinyint(1) DEFAULT '0',
+  `last_login_time` datetime DEFAULT NULL,
+  `last_login_ip` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+<table name="news" view="standard">
+<left>421</left>
+<top>372</top>
+<width>218</width>
+<height>279</height>
+<sql_create_table>CREATE TABLE `news` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `created` datetime DEFAULT '0000-00-00 00:00:00',
+  `modified` datetime DEFAULT '0000-00-00 00:00:00',
+  `deleted` tinyint(1) DEFAULT '0',
+  `title` varchar(255) DEFAULT NULL,
+  `date` date DEFAULT '0000-00-00',
+  `cat` int(11) DEFAULT NULL,
+  `brief` text,
+  `content` text,
+  `source` varchar(255) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>

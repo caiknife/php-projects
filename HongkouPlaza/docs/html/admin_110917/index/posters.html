@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>凯德龙之梦-虹口 网站管理系统 V1.0</title>
+<link href="../style/css/transdmin.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="style/css/ie6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="style/css/ie7.css" /><![endif]-->
+<script type="text/javascript" src="../js/jquery_1.6_packed.js"></script>
+<script type="text/javascript" src="../style/js/jNice.js"></script>
+<script type="text/javascript" src="../js/jquery-ui-1.8.14.custom.packed.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+    	<h1><a href="#"><span>凯德龙之梦-虹口网站管理系统 V1.0</span></a></h1>
+        <div id="mainNav">
+			<ul>
+				<li><a href="../index/posters.html" class="active">首页管理</a></li>
+				<li><a href="../brand/brand_list.html">商铺管理</a></li>
+				<li><a href="../activities/activities_list.html">活动管理</a></li>
+				<li><a href="../news/news_list.html">新闻管理</a></li>
+				<li><a href="../member/member_list.html">会员管理</a></li>
+				<li class="logout"><a href="#">admin | 退出登入</a></li>
+			</ul>
+		</div>
+        <!-- // #end mainNav -->
+        <div id="containerHolder">
+			<div id="container">
+        		<div id="sidebar">
+                	<ul class="sideNav">
+                    	<li><a class="active" href="posters.html">首页海报 </a></li>
+                    	<li><a href="brand.html">潮流品牌</a></li>
+                    	<li><a href="calendar.html">活动日历</a></li>
+                    </ul>
+                    <!-- // .sideNav -->
+                </div>    
+                <!-- // #sidebar -->
+                <!-- h2 stays for breadcrumbs -->
+                <div id="main">
+					<form action="" class="jNice">
+						<fieldset>
+							拖动修改首页图片展示排序（规则：从左至右依次在首页显示）
+						</fieldset>
+					<ul class="index_posters_list">
+						<li><img alt="文字描述1" src="../images/index_pic_01.jpg" />
+							<a title="编辑" class="edit" href="posters_edit.html">编辑</a><a title="删除" href="#" class="delete">删除</a>
+						</li>
+						<li><img alt="文字描述2" src="../images/index_pic_01.jpg" />
+							<a title="编辑" class="edit" href="posters_edit.html">编辑</a><a title="删除" href="#" class="delete">删除</a>	
+						</li>
+						<li><img alt="文字描述3" src="../images/index_pic_01.jpg" />
+							<a title="编辑" class="edit" href="posters_edit.html">编辑</a><a title="删除" href="#" class="delete">删除</a>
+						</li>
+						<li><img alt="文字描述4" src="../images/index_pic_01.jpg" />
+							<a title="编辑" class="edit" href="posters_edit.html">编辑</a><a title="删除" href="#" class="delete">删除</a>
+						</li>
+						<li><a class="add" href="posters_edit.html">添加图片</a></li>
+					</ul>
+					<script type="text/javascript">
+						$( ".index_posters_list" ).sortable({ });
+					</script>
+					<!-- IE浏览器 JS 需改变LI class,鼠标移动至LI class="hover",点击未释放li class="active"-->
+					</form>
+                </div>
+                <!-- // #main -->
+                <div class="clear"></div>
+            </div>
+            <!-- // #container -->
+        </div>	
+        <!-- // #containerHolder -->
+        <p id="footer">凯德龙之梦-虹口网站管理系统 V1.0</p>
+    </div>
+    <!-- // #wrapper -->
+</body>
+</html>

@@ -1,0 +1,72 @@
+@charset "utf-8";
+#cont {margin-left:-10px}
+.DynarchCalendar {-moz-user-select:none; -webkit-user-select:none; user-select:none; background:#fff; font:11px Tahoma, Arial, sans-serif; line-height:14px; position:relative; cursor:default; background:url(img/calendar.png) no-repeat; width:140px; overflow:hidden; padding:7px}
+.DynarchCalendar table {border-collapse:collapse; line-height:14px}
+.DynarchCalendar-topBar {border-bottom:1px solid #ddd; padding:5px 0 0 0}
+.DynarchCalendar table.DynarchCalendar-titleCont {font:12px/14px 微软雅黑,Tahoma,Arial; text-align:center; font-weight:bold; color:#fff; text-align:center; z-index:9; position:relative; margin:auto; cursor:pointer}
+.DynarchCalendar-title div {padding-bottom:6px}
+.DynarchCalendar-pressed-title div {color:#000}
+.DynarchCalendar-bottomBar-today {display:none}
+.DynarchCalendar-body {position:relative; overflow:hidden}
+.DynarchCalendar-animBody-backYear {position:absolute; top:-100%; left:0}
+.DynarchCalendar-animBody-back {position:absolute; top:5px; left:-100%}
+.DynarchCalendar-animBody-fwd {position:absolute; top:5px; left:100%}
+.DynarchCalendar-animBody-now {position:absolute; top:5px; left:0}
+.DynarchCalendar-animBody-fwdYear {position:absolute; top:100%; left:0}
+.DynarchCalendar-dayNames div {font-family:微软雅黑,Tahoma,Arial}
+.DynarchCalendar-navBtn {position:absolute; top:5px; z-index:10}
+.DynarchCalendar-navBtn div {background-repeat:no-repeat; background-position:50% 50%; height:15px; width:16px; padding:1px}/*箭头*/
+
+.DynarchCalendar-prevMonth {left:8px; top:10px}
+.DynarchCalendar-nextMonth {right:8px; top:10px}
+
+.DynarchCalendar-prevMonth div {background-image:url("img/nav-left.gif")}
+.DynarchCalendar-nextMonth div {background-image:url("img/nav-right.gif")}
+.DynarchCalendar-menu {position:absolute; _padding:7px; padding-top:15px; left:0; top:0; width:100%; height:100%; background-color:#fff; overflow:hidden; opacity:0.85; filter:alpha(opacity=85)}
+.DynarchCalendar-menu table {margin:auto}
+.DynarchCalendar-menu table td div {text-align:center; font-weight:bold; padding:3px; font-family:微软雅黑,Tahoma,Arial}
+.DynarchCalendar-menu table td div.DynarchCalendar-menu-month {width:40px; text-align:center}
+.DynarchCalendar-menu table td div.DynarchCalendar-hover-navBtn {border:1px solid #000; padding:2px 4px; background-color:#fff; color:#000}
+.DynarchCalendar-menu table td div.DynarchCalendar-pressed-navBtn {border:1px solid #000; padding:2px 4px; background-color:#777; color:#fff!important}
+.DynarchCalendar-menu-year {text-align:center; background:#fff; border:#666 1px solid; border-top:#999 solid 1px; border-left:#999 solid 1px; background:#ddd; font:14px Tahoma,Arial; font-weight:bold}
+.DynarchCalendar-menu-sep {height:1px; font-size:1px; line-height:1px; overflow:hidden; border-top:1px solid #888; background:#fff; margin-top:4px; margin-bottom:3px}
+/* body */
+
+.DynarchCalendar-hover-week {background-color:#eee}
+.DynarchCalendar-dayNames div, .DynarchCalendar-day, .DynarchCalendar-weekNumber {width:16px; text-align:center}
+.DynarchCalendar-day {text-align:right; color:#222}
+.DynarchCalendar-day.act {background-image:url(img/act.gif); background-repeat:no-repeat; background-position:3px 3px}
+.DynarchCalendar-day-othermonth {color:#ccc}
+.DynarchCalendar-weekend {color:#c22}
+.DynarchCalendar-day-today {color:#fff; font-weight:bold; background:#E83827}
+.DynarchCalendar-day-today.act {background-image:url(img/act2.gif); background-position:1px 1px}
+.DynarchCalendar-day-disabled {opacity:0.2}
+.DynarchCalendar-hover-date {padding:2px 3px; background-color:#ddd; border:1px solid #666; margin:0!important; color:#000}
+.DynarchCalendar-day-othermonth.DynarchCalendar-hover-date {border-color:#666; color:#888}
+.DynarchCalendar-dayNames .DynarchCalendar-weekend {color:#c22}
+.DynarchCalendar-day-othermonth.DynarchCalendar-weekend {color:#d88}
+.DynarchCalendar-day-selected {padding:2px 3px; margin:1px; background-color:#ccc; color:#000!important}
+.DynarchCalendar-day-today.DynarchCalendar-day-selected {background-color:#999}
+/* focus */
+
+.DynarchCalendar-focusLink {position:absolute; opacity:0; filter:alpha(opacity=0)}
+.DynarchCalendar-focused .DynarchCalendar-topBar {}
+.DynarchCalendar-focused .DynarchCalendar-hover-week {background-color:#eee}
+.DynarchCalendar-tooltip {position:absolute; top:100%; width:100%}
+.DynarchCalendar-focused .DynarchCalendar-tooltipCont {background:#eee; border-color:#000}
+
+.DynarchCalendar, .DynarchCalendar table {font-size:10px}
+.DynarchCalendar-dayNames {padding:0}
+.DynarchCalendar-body {padding:0}
+.DynarchCalendar-animBody-back {top:0}
+.DynarchCalendar-animBody-fwd {top:0}
+.DynarchCalendar-animBody-now {top:0}
+.DynarchCalendar-first-col {padding-left:0}
+.DynarchCalendar-last-col {padding-right:0}
+.DynarchCalendar-weekNumber {margin-right:0; padding-right:4px!important}
+.DynarchCalendar-dayNames div, .DynarchCalendar-day, .DynarchCalendar-weekNumber {padding:1px 2px}
+.DynarchCalendar-menu-year {font-size:12px}
+.DynarchCalendar-hover-date {padding:0px 1px}
+.DynarchCalendar-day-selected {padding:0px 1px}
+.DynarchCalendar-menu table td div {padding:2px 4px}
+.DynarchCalendar-menu table td div.DynarchCalendar-hover-navBtn {padding:1px 3px}

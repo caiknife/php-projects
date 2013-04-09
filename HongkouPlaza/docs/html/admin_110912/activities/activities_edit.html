@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>凯德龙之梦-虹口 网站管理系统 V1.0</title>
+<link href="../style/css/transdmin.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="style/css/ie6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="style/css/ie7.css" /><![endif]-->
+<script type="text/javascript" src="../js/jquery_1.6_packed.js"></script>
+<script type="text/javascript" src="../style/js/jNice.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+    	<h1><a href="#"><span>凯德龙之梦-虹口网站管理系统 V1.0</span></a></h1>
+        <div id="mainNav">
+			<ul>
+				<li><a href="../index/posters.html">首页管理</a></li>
+				<li><a href="../brand/brand_list.html">商铺管理</a></li>
+				<li><a class="active" href="../activities/activities_list.html">活动管理</a></li>
+				<li><a href="../news/news_list.html">新闻管理</a></li>
+				<li><a href="../member/member_list.html">会员管理</a></li>
+				<li class="logout"><a href="#">admin | 退出登入</a></li>
+			</ul>
+		</div>
+        <!-- // #end mainNav -->
+        <div id="containerHolder">
+			<div id="container">
+                <div id="main" class="main">
+					<form action="" class="jNice">
+						<h3>选择品牌 <span>搜索出品牌选中后将添加至此活动</span></h3>
+						<fieldset>
+							<dl class="search">
+									<dd><label>商铺名称：</label><input type="text" class="text-medium" /></dd>
+									<dd><label>商铺类型：</label>
+										<select name="">
+											<option>全部</option>
+											<option>服装/配饰</option>
+											<option>餐饮</option>
+											<option>美容/保健</option>
+											<option>家居用品</option>
+											<option>运动休闲</option>
+											<option>娱乐</option>
+											<option>儿童/玩具</option>
+											<option>各类服务</option>
+										</select></dd>
+									<dd><label>楼层：</label>
+										<select name="">
+											<option>全部</option>
+											<option>B2</option>
+											<option>B1</option>
+											<option>1F</option>
+											<option>2F</option>
+											<option>3F</option>
+											<option>4F</option>
+											<option>5F</option>
+											<option>6F</option>
+										</select></dd>
+									<dd><label>楼层编号：</label><input type="text" class="text-small" /></dd>
+									<dd class="submti"><input type="submit" value="搜 索" /></dd>
+									<dd class="add"><input type="submit" value="添加品牌" /></dd>
+								</dl>
+						</fieldset>
+						<h3>搜索结果</h3>
+						<ul class="brand_list">
+							<li><img src="../images/logo.gif" width="80" height="80" />
+								<h3>欧舒丹</h3>
+								<span>L5-SPK10</span>
+								<input type="checkbox" />
+							</li>
+							<li><img src="../images/logo.gif" width="80" height="80" />
+								<h3>欧舒丹</h3>
+								<span>L5-SPK10</span>
+								<input type="checkbox" />
+							</li>
+							<li><img src="../images/logo.gif" width="80" height="80" />
+								<h3>欧舒丹</h3>
+								<span>L5-SPK10</span>
+								<input type="checkbox" />
+							</li>
+						</ul><br clear="all" />
+						<h3>已添加品牌</h3>
+						<ul class="brand_list">
+							<li><img src="../images/logo.gif" width="80" height="80" />
+								<h3>欧舒丹</h3>
+								<span>L5-SPK10</span>
+								<a class="delete" title="删除" href="#">删除</a>
+							</li>
+							<li><img src="../images/logo.gif" width="80" height="80" />
+								<h3>欧舒丹</h3>
+								<span>L5-SPK10</span>
+								<a class="delete" title="删除" href="#">删除</a>
+							</li>
+							<li><img src="../images/logo.gif" width="80" height="80" />
+								<h3>欧舒丹</h3>
+								<span>L5-SPK10</span>
+								<a class="delete" title="删除" href="#">删除</a>
+							</li>
+						</ul><br clear="all" />
+						<div class="activities_edit">
+							<h3>必填信息</h3>
+							<fieldset>
+								<div class="brand_pic">
+									<p class="edit_logo">
+										<label><strong>活动海报</strong> <span>宽:670px 高:315px</span></label>
+										<input type="file" class="text-long" /></p>
+									<p><label><strong>活动类型</strong></label>
+										<select name="">
+											<option>促销</option>
+											<option>活动</option>
+										</select></p>
+								</div>
+								<div class="brand_right">
+									<p><label><strong>活动标题</strong></label>
+									<input type="text" class="text-long" /></p>
+									<p><label><strong>活动副标题</strong></label>
+										<input type="text" class="text-long" /></p>
+									<p><label><strong>开始时间</strong></label>
+										<input type="text" class=" text-medium" value="2011-4-13" /><a class="time" href="#"></a></p>
+									<p><label><strong>结束时间</strong></label>
+										<input type="text" class=" text-medium" value="2011-5-13" /><a class="time" href="#"></a></p>
+								</div>
+							</fieldset>
+						</div>
+						<div class="activities_edit2">
+							<h3>选填信息</h3>
+							<fieldset>
+								<p><label><strong>活动回顾新闻链接</strong></label>
+									<input type="text" class="text-long" /></p>
+								<p><label><strong>活动关键词</strong> <span>用于关键字搜索，多个关键字请用 ；分割</span></label>
+									<input type="text" class="text-long" value="关键字1；关键字2" /></p>
+								<p><label><strong>简介</strong></label><textarea name="" rows="1" cols="1"></textarea></p>
+							</fieldset>
+						</div><br clear="all" />
+						<input type="submit" value="保 存" /> <span style="padding-left:10px; display:inline-block"><input type="submit" value="添加下一个" /></span>
+                    </form>
+                </div>
+                <!-- // #main -->
+                <div class="clear"></div>
+            </div>
+            <!-- // #container -->
+        </div>	
+        <!-- // #containerHolder -->
+        <p id="footer">凯德龙之梦-虹口网站管理系统 V1.0</p>
+    </div>
+    <!-- // #wrapper -->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>凯德龙之梦-虹口 网站管理系统 V1.0</title>
+<link href="../style/css/transdmin.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" media="screen" href="style/css/ie6.css" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" type="text/css" media="screen" href="style/css/ie7.css" /><![endif]-->
+<script type="text/javascript" src="../js/jquery_1.6_packed.js"></script>
+<script type="text/javascript" src="../style/js/jNice.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+    	<h1><a href="#"><span>凯德龙之梦-虹口网站管理系统 V1.0</span></a></h1>
+        <div id="mainNav">
+			<ul>
+				<li><a href="../index/posters.html">首页管理</a></li>
+				<li><a href="../brand/brand_list.html">商铺管理</a></li>
+				<li><a href="../activities/activities_list.html">活动管理</a></li>
+				<li><a class="active" href="../news/news_list.html">新闻管理</a></li>
+				<li><a href="../member/member_list.html">会员管理</a></li>
+				<li class="logout"><a href="#">admin | 退出登入</a></li>
+			</ul>
+		</div>
+        <!-- // #end mainNav -->
+        <div id="containerHolder">
+			<div id="container">
+                <div id="main" class="main">
+					<form action="" class="jNice">
+						<div class="news_edit">
+							<h3>必填信息</h3>
+							<fieldset>
+								<p><label><strong>标题</strong></label>
+									<input type="text" class="text-long" /></p>
+								<p><label><strong>时间</strong></label>
+									<input type="text" class=" text-medium" value="2011-4-13" /><a class="time" href="#"></a></p>
+								<p><label>类型</label>
+									<select name="">
+										<option>请选择一个类型</option>
+										<option>媒体报道</option>
+										<option>社会公益</option>
+										<option>关于凯德</option>
+									</select></p>
+								<p><label><strong>列表简述</strong></label><textarea name="" rows="1" cols="1"></textarea></p>
+								<p><label><strong>正文</strong></label><textarea name="" rows="1" cols="1">CMS</textarea></p>
+							</fieldset>
+						</div>
+						<div class="news_right">
+							<h3>选填信息</h3>
+							<fieldset>
+								<p><label><strong>出处</strong></label>
+									<input type="text" class="text-long" /></p>
+								<p><label><strong>原文链接</strong></label>
+									<input type="text" class="text-long" /></p>
+								<p><label><strong>列表配图</strong> <span>宽:130px 高:90px</span></label>
+									<input type="file" class="text-long" /></p>
+							</fieldset>
+						</div><br clear="all" />
+						<input type="submit" value="保 存" /> <span style="padding-left:10px; display:inline-block"><input type="submit" value="添加下一条" /></span>
+                    </form>
+                </div>
+                <!-- // #main -->
+                <div class="clear"></div>
+            </div>
+            <!-- // #container -->
+        </div>	
+        <!-- // #containerHolder -->
+        <p id="footer">凯德龙之梦-虹口网站管理系统 V1.0</p>
+    </div>
+    <!-- // #wrapper -->
+</body>
+</html>

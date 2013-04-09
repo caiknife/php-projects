@@ -1,0 +1,3 @@
+<li><a <?php if($this->action=='admin_post' && $type=='movie'):?>class="active"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'post', 'admin'=>true, 'movie'))?>">影院订票</a></li>
+<li><a <?php if($this->action=='admin_post' && $type=='park'):?>class="active"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'post', 'admin'=>true, 'park'))?>">停车信息</a></li>
+<li><a <?php if($this->action=='admin_index' || $this->action=='admin_edit'):?>class="active"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'index', 'admin'=>true))?>">相关帮助</a></li>
