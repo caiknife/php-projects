@@ -1,0 +1,26 @@
+@charset "utf-8";
+#warp #header h1 a {background:url(img/logo.png) no-repeat; width:190px; height:71px; margin:auto}
+#idTransformView {width:960px; height:395px; padding:11px 10px 0 10px; background:url(img/idTransformView.png) -1px top; margin-top:7px; position:relative}
+#idTransformView img {width:960px; height:395px; position:absolute; top:11px; left:10px; background:#fff}
+#idTransformView #idNum {position:absolute; z-index:10; height:15px; width:100%; text-align:center; z-index:6; left:0; bottom:15px}
+#idTransformView #idNum span {background:url(img/btnSlider.png) left top; cursor:default; display:inline-block; margin:0 1px; width:15px; height:15px}
+#idTransformView #idNum span.on {background:url(img/btnSlider.png) right bottom}
+#idTransformView i {background:url(img/idTransformView.png) no-repeat; height:20px; width:20px; position:absolute; z-index:10}
+#idTransformView i.s1 {background-position:left top; left:-1px; top:0}
+#idTransformView i.s2 {background-position:right top; right:0; top:0}
+
+.indexAbout {color:#333; padding-top:10px; padding-bottom:30px; margin-bottom:20px; border-bottom:#999 3px dotted}
+.indexAbout h2 {font-size:30px; line-height:36px; padding-bottom:10px}
+.indexAbout p {font-size:16px; line-height:26px}
+.indexEvents {padding-bottom:30px; margin-bottom:20px; border-bottom:#999 3px dotted; float:left; width:990px; padding-top:10px; overflow:hidden; zoom:1}
+.indexEvents li {width:225px; background:#E5E6E5; border:#999 1px solid; position:relative; height:375px; float:left; margin-right:17px}
+.indexEvents li h3 {padding:10px 15px; height:30px; line-height:15px; font-size:14px; font-weight:normal; color:#000}
+.indexEvents li h3 a {color:#000}
+.indexEvents li img {width:225px; height:225px}
+.indexEvents li p {padding:10px 15px; margin:0; color:#666}
+.indexEvents li a.more {position:absolute; left:15px; bottom:10px; color:#000}
+.indexGuest {float:left; width:225px}
+.indexGuest h3,.indexMechanism h3 {font-size:14px; line-height:22px}
+.indexGuest ul li {float:left; width:70px; height:70px; margin:5px 5px 0 0}
+.indexGuest ul li img {width:70px; height:70px}
+.indexMechanism {float:right; width:725px}

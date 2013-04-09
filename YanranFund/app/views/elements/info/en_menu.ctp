@@ -1,0 +1,4 @@
+<a <?php if($this->action==$lang.'_news' || $this->action==$lang.'_viewnews'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'news'))?>">News center</a> 
+<a <?php if($this->action==$lang.'_media'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'media'))?>">News clippings</a> 
+<a <?php if($this->action==$lang.'_topic'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'topic'))?>">News release</a> 
+<a <?php if($this->action==$lang.'_album' || $this->action==$lang.'_viewalbum'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'album'))?>">Gallery</a>

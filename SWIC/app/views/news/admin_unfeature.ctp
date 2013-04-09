@@ -1,0 +1,1 @@
+<a href="<?php echo $this->Html->url(array('action'=>'feature', 'admin'=>true, $id))?>" class="feature">推荐</a>

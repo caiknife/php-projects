@@ -1,0 +1,3 @@
+<?php $partnerTypes = Configure::read('Partner.types')?>
+<a <?php if($this->action==$lang.'_enterprise'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'enterprise'))?>"><?php echo $partnerTypes['enterprise'][$lang]?></a> 
+<a <?php if($this->action==$lang.'_personal'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'personal'))?>"><?php echo $partnerTypes['personal'][$lang]?></a>

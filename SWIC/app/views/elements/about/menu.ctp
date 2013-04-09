@@ -1,0 +1,3 @@
+<li><a <?php if($this->action=='cn_index'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('controller'=>'about', 'action'=>'index', 'cn'=>true))?>">中心简介</a></li>
+<li><a <?php if($this->action=='cn_department'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('controller'=>'about', 'action'=>'department', 'cn'=>true))?>">评审团队</a></li>
+<li><a <?php if($this->action=='cn_partners'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('controller'=>'about', 'action'=>'partners', 'cn'=>true))?>">指导及合作单位</a></li>

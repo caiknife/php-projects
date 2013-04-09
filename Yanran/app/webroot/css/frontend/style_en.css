@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import url("base.css");
+body {font:12px/150% font-family:Arial,Helvetica,sans-serif}
+#header .language a.cn {background-position:0 0}
+#header .menu li div {width:148px}
+#header .menu li a,#header .menu li .sub-meun span,#none h3,.index h3,.main h2,.teamPage li strong,.servicePopBox h3,#Cms h3 {font-family:Arial,Helvetica,sans-serif}
+#header .menu li.btnMember {letter-spacing:5px}
+.hotNews ul {left:140px}
+#header .menu li,#header .menu li .title,#header .menu li .curr {text-align:center; text-transform:lowercase}
+#header .menu li.c1,#header .menu li.c1 .title,#header .menu li.c1 .curr {width:65px}
+#header .menu li.c2,#header .menu li.c2 .title,#header .menu li.c2 .curr {width:55px}
+#header .menu li.c3,#header .menu li.c3 .title,#header .menu li.c3 .curr {width:84px}
+#header .menu li.c4,#header .menu li.c4 .title,#header .menu li.c4 .curr {width:118px}
+#header .menu li.c5,#header .menu li.c5 .title,#header .menu li.c5 .curr {width:55px}
+#header .menu li.c6,#header .menu li.c6 .title,#header .menu li.c6 .curr {width:90px}
+#header .menu li.c7,#header .menu li.c7 .title,#header .menu li.c7 .curr {width:113px}
+#header .menu li.c8,#header .menu li.c8 .title,#header .menu li.c8 .curr {width:55px}
+#header .menu li.c9,#header .menu li.c9 .title,#header .menu li.c9 .curr {width:68px}
+#header .menu li.c10,#header .menu li.c10 .title,#header .menu li.c10 .curr {width:182px}
+#header .menu li.c11,#header .menu li.c11 .title,#header .menu li.c11 .curr {width:84px}
+#header .menu li.c4 .sub-meun {width:165px}
+
+.mainPoster span {width:210px}
+/*关于我们*/.mainPoster span.tAbout {background:url(img/title/title_en-01.png); width:121px}
+/*嫣然新闻*/.mainPoster span.tNews {background:url(img/title/title_en-02.png); width:115px}
+/*服务项目*/.mainPoster span.tService {background:url(img/title/title_en-03.png); width:160px}
+/*颅颜中心*/.mainPoster span.tCraniofacial {background:url(img/title/title_en-04.png); width:209px}
+/*医疗团队*/.mainPoster span.tTeam {background:url(img/title/title_en-05.png); width:112px}
+/*环境设施*/.mainPoster span.tEnvi {background:url(img/title/title_en-06.png); width:161px}
+/*在线预约*/.mainPoster span.tOnline {background:url(img/title/title_en-07.png); width:214px}
+/*招贤纳才*/.mainPoster span.tJob {background:url(img/title/title_en-08.png); width:101px}
+/*健康咨询*/.mainPoster span.tInformation {background:url(img/title/title_en-09.png); width:128px}
+/*保险与付款*/.mainPoster span.tInsurance {background:url(img/title/title_en-10.png); width:373px}
+/*联系我们*/.mainPoster span.tContact {background:url(img/title/title_en-11.png); width:152px}
+ 

@@ -1,0 +1,1 @@
+<a href="<?php echo $this->Html->url(array('action'=>'unfeature', 'admin'=>true, $id))?>" class="unfeature">取消推荐</a>

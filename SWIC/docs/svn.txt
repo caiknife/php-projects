@@ -1,0 +1,19 @@
+SVN:
+http://222.73.173.163:8080/svn/svn1/OTHER/20_CODE/shwic
+xiaocai
+fKPfH4qWzM7b
+
+FTP:
+ftp://webrootftp:BV7X3Fr7fVKU@222.73.165.114
+
+数据库
+222.73.165.114
+用户名 shwic
+密码 n7QeqUxr6tuj
+
+
+ftp://shiwic:SH5t@r1Re3@114.80.156.113
+
+ftp://shwpiorg:S5r@5e6Fa1@114.80.208.229
+主机已经绑定域名shwic.org和shwpi.org
+对应这2个域名

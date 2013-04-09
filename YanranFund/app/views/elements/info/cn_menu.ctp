@@ -1,0 +1,4 @@
+<a <?php if($this->action==$lang.'_news' || $this->action==$lang.'_viewnews'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'news'))?>">新闻中心</a> 
+<a <?php if($this->action==$lang.'_media'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'media'))?>">媒体剪报</a> 
+<a <?php if($this->action==$lang.'_topic'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'topic'))?>">新闻下载中心</a> 
+<a <?php if($this->action==$lang.'_album' || $this->action==$lang.'_viewalbum'):?>class="curr"<?php endif;?> href="<?php echo $this->Html->url(array('action'=>'album'))?>">相册</a>

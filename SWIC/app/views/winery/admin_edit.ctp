@@ -1,0 +1,2 @@
+<td class="title"><?php echo $this->Form->text('EditWinery'.$id.'.title', array('title'=>'酒庄名称'))?></td>
+<td class="operate"><a href="#" class="cancel">取消</a> <a href="<?php echo $this->Html->url(array('action'=>'save', 'admin'=>'true', $id))?>" class="save"><strong>保存</strong></a></td>

@@ -1,0 +1,10 @@
+主域名： smileangelhospital.org.cn
+京ICP备12031839号-1 
+Web服务器地址： linux-qdweb-bjzw01.xincache.cn
+FTP用户名： net75928821
+FTP密码： rYDmg6dv
+
+数据库地址： mysql5-qd01.xincache.cn
+数据库名称： net75928821
+数据库用户名： net75928821
+数据库密码： 2vtN2Sm8
